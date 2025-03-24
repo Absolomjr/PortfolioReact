@@ -1,0 +1,89 @@
+.login-container {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    transition: background 0.3s ease;
+  }
+  
+  .login-card {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 15px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .login-card h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 0.5rem;
+    font-size: 2rem;
+  }
+  
+  .login-subtitle {
+    text-align: center;
+    color: #666;
+    margin-bottom: 2rem;
+  }
+  
+  .form-group {
+    margin-bottom: 1.5rem;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e1e1;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  .form-group input:focus {
+    border-color: #667eea;
+    outline: none;
+  }
+  
+  button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+  button:hover {
+    transform: translateY(-2px);
+  }
+
+
+.dark-mode .login-card {
+  background: rgba(45, 45, 45, 0.9);
+  color: #ffffff;
+}
+
+.dark-mode .login-card h2 {
+  color: #ffffff;
+}
+
+.dark-mode .login-subtitle {
+  color: #cccccc;
+}
+
+.dark-mode .form-group input {
+  background: #1a1a1a;
+  border-color: #444444;
+  color: #ffffff;
+}
+
+.dark-mode .form-group input:focus {
+  border-color: #764ba2;
+}
